@@ -1,0 +1,180 @@
+body {
+    
+    background-color: #FFFCA8;
+    color: #2c2c2c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.line{border:1px solid black;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: left;
+    max-width: 800px;
+    margin: 40px;
+    font-size: 18px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-item p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+
+
+.philosophy {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.text {
+    width: 300px;
+    font-size: 16px; 
+}
+
+
+
+
+
+
+.testimonials {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFCA8;
+    padding: 20px;
+}
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.testimonial {
+    background-color: #FFFCA8;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+.testimonial img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.testimonial p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.testimonial strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px; 
+}
+
+.footer .contact {
+    color:black 
+}
+
+.contact {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    color:k;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+  
+    .portfolio {
+        padding: 20px;
+    }
+  
+    .portfolio-item {
+        grid-template-columns: 1fr;
+    }
+  
+    .testimonials-container{
+        gap: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+  
+    .testimonial{
+        padding: 10px;
+    }
+  }
